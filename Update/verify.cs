@@ -6,7 +6,7 @@ private void f_main_Load(object sender, EventArgs e)
 private void VerifyUpdate()
         var vlocal = new Version(Assembly.GetExecutingAssembly().GetName().Version.ToString());
     
-        var vremot = new Version(DownloadVersion().FirstOrDefault());
+        var vremote = new Version(DownloadVersion().FirstOrDefault());
 
 
         var result = vlocal.CompareTo(vremot);
